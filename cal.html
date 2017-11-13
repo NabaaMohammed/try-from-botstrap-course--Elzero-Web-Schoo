@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <title>calculater</title>
+        <link rel='stylesheet' href='css/bootstrap.css' />
+		<link rel='stylesheet' href='css/calstyle.css' />
+ 
+         
+    </head>
+    <body>
+	<center>
+	<input type="text" id="result">
+	</center>
+	
+	<!--start calculater design -->
+	<div class="container">
+	<div class="row">
+	
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12"style="  padding-bottom:1%; margin:1%;">
+	<button onclick="one()" id="one1" style="width:100%;  background:#d4c8c8;">1 </button>
+	</div>
+	
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="two()" id="two2" style="width:100%;  background:#d4c8c8;"> 2 </button>
+	</div>
+	
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="three()"style="width:100%;  background:#d4c8c8;"> 3</button>
+	 
+	</div>
+	
+	
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	
+	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="plus()" id="plus1" style="width:100%;  background:#d4c8c8;"> + </button>
+	 
+	</div>
+	
+	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="minus()" style="width:100%;  background:#d4c8c8;"> - </button>
+	 
+	</div>
+	
+	
+	
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%;">
+	<button onclick="four()"style="width:100%;  background:#d4c8c8;"> 4 </button>
+	</div>
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%;  ">
+	<button  onclick="five()"style="width:100%;  background:#d4c8c8;"> 5 </button>
+	</div>
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%;  ">
+	<button  onclick="six()"style="width:100%;  background:#d4c8c8;"> 6 </button>
+	</div>
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	
+	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="multiply()" style="width:100%;  background:#d4c8c8;"> * </button>
+	 
+	</div>
+	
+	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="devide()" style="width:100%;  background:#d4c8c8;"> / </button>
+	 
+	</div>
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12"style="  padding-bottom:1%; margin:1%;  ">
+	<button onclick="seven()" style="width:100%;  background:#d4c8c8;"> 7 </button>
+	</div>
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%;  ">
+	<button onclick="eight()" style="width:100%;  background:#d4c8c8;"> 8 </button>
+	</div>
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12"style=" padding-bottom:1%; margin:1%;  ">
+	<button  onclick="nine()"style="width:100%;  background:#d4c8c8;"> 9 </button>
+	</div>
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	
+	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="modee()" style="width:100%;  background:#d4c8c8;"> % </button>
+	 
+	</div>
+	
+	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="exponantee()" style="width:100%;  background:#d4c8c8;"> exponant</button>
+	 
+	</div>
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%;  ">
+	<button onclick="zero()" style="width:100%;  background:#d4c8c8;"> 0</button>
+	</div>
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button  onclick="dot()"style="width:100%;  background:#d4c8c8;"> .</button>
+	</div>
+	<div class="col-lg-1 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%;  ">
+	<button onclick="c()" style="width:100%;  background:#d4c8c8;"> c</button>
+	</div>
+	
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	<div class="col-lg-1 col-lg-offset-1 " style=" padding-bottom:1%; margin:1%; ">
+	</div>
+	
+	<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="logee()" style="width:100%;  background:#d4c8c8;"> log </button>
+	 
+	</div>
+	
+	<div  class="col-lg-2 col-md-4 col-sm-6 col-xs-12" style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="lnee()" style="width:100%;  background:#d4c8c8;"> ln </button>
+	 
+	</div>
+	<div  class="col-lg-3 " style="  padding-bottom:1%; margin:1%; ">
+	<button onclick="final_result()" style="width:100%;  background:#d4c8c8;"> = </button>
+	 
+	</div>
+	</div> 
+	</div>
+	<!--start calculater design -->
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+     
+	<script src="js/caljava.js"></script>
+    <script>
+	</body>
+</html>
